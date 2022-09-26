@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -11,6 +12,15 @@
     display: flex;
     justify-content: center;
     text-align: center;
+}
+#scoreBox
+{
+    position: absolute;
+    top: 9px;
+    right:200px;
+    font-size: 80px;;
+    font-weight: bold;
+    font-family: 'Bungee Spice', cursive;
 }
 #board
 {
@@ -28,14 +38,22 @@
 }
 .head
 {
-    background-color: red;
+    background: linear-gradient(red,yellow);
+    border: 2px solid purple;
+    transform: scale(1.02);
+    border-radius:9px;
 
 }
 .snake
 {
     background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+
 }
 .food
 {
-    background-color: rgb(240, 240, 13);
+    background: linear-gradient(red,purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
 }
